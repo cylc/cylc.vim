@@ -1,35 +1,6 @@
 " Syntax highlighting for Cylc files.
 " Author: Hilary Oliver, 2011-2014
 " see :help syntax
-"______________________________________________________________________
-"
-"INSTRUCTIONS FOR USE
-"
-" 1) Put this file in $HOME/.vim/syntax/ directory.
-"
-" 2) Put the following in $HOME/.vimrc for file type recognition
-"    (without the leading "| characters):
-"
-"|augroup filetype
-"|  au! BufRead,BufnewFile *suite*.rc   set filetype=cylc
-"|  au! BufRead,BufnewFile *.cylc   set filetype=cylc
-"|augroup END
-"
-" 3) If you want to open files with syntax folds initially open, then
-"    also add the following line to your $HOME/.vimrc file:
-"
-"|if has("folding") | set foldlevelstart=99 | endif
-"
-" 4) Cylc syntax is linked to standard vim highlighting groups below (e.g.
-" comments: 'hi def link cylcComment Comment'). These can be customized in
-"  your .vimrc file for consistent highlighting across file types, e.g.:
-"
-"|hi Statement guifg=#22a8e3 gui=bold
-"|hi Normal guifg=#9096a4
-"|hi Comment guifg=#ff6900
-"|hi Type guifg=#28d45b gui=bold"
-"
-"______________________________________________________________________
 
 " syncing from start of file is best, but may be slow for large files:
 syn sync fromstart
