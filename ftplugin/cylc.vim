@@ -1,4 +1,4 @@
-" Simple indentation
+" Simple indentation, overridden if `:filetype indent` is also set
 setlocal autoindent
 
 " Includes
