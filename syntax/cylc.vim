@@ -49,10 +49,11 @@ syn match cylcComment /#.*/ contains=trailingWS,cylcToDo,lineCon,badLineCon,jinj
 
 syn region cylcString start=+'+ skip=+\\'+ end=+'+ contains=trailingWS,lineCon,badLineCon,jinja2,empy,cylcToDo
 syn region cylcString start=+"+ skip=+\\"+ end=+"+ contains=trailingWS,lineCon,badLineCon,jinja2,empy,cylcToDo
-syn region cylcString start=+=\@<= *"""+ end=+"""+ contains=trailingWS,lineCon,badLineCon,jinja2,empy,empyComment,cylcComment,trigger,output,suicide,offset,cylcToDo
-syn region cylcString start=+=\@<= *'''+ end=+'''+ contains=trailingWS,lineCon,badLineCon,jinja2,empy,empyComment,cylcComment,trigger,output,suicide,offset,cylcToDo
+syn region cylcMultiString start=+=\@<= *"""+ end=+"""+ contains=trailingWS,lineCon,badLineCon,jinja2,empy,empyComment,cylcComment,trigger,output,suicide,offset,cylcToDo
+syn region cylcMultiString start=+=\@<= *'''+ end=+'''+ contains=trailingWS,lineCon,badLineCon,jinja2,empy,empyComment,cylcComment,trigger,output,suicide,offset,cylcToDo
 
-"de-emphasize strings as quoting is irrelevant in cylc
+hi def link cylcMultiString String
+" de-emphasize regular strings as quoting is irrelevant in cylc
 hi def link cylcString Normal
 
 hi def link cylcSection Statement
