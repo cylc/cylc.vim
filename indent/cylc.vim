@@ -47,8 +47,8 @@ function GetCylcIndent(lnum)
   let line = getline(a:lnum)
   let line = substitute(line, '\v^\s+|\s+$', '', 'g')
 
-  " Do not adjust jinja indentation
-  if line =~ '^\({{|{%\)'
+  " Do not adjust jinja or empy indentation
+  if line =~ '^\({[{%#]\|@[[({]\)'
     return -1
   endif
 
