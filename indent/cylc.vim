@@ -74,5 +74,3 @@ endfunction
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
-
-" vim: et sw=2 ts=2 sts=2
