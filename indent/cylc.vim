@@ -9,7 +9,7 @@ setlocal nolisp      " Make sure lisp indenting doesn't supersede us
 setlocal autoindent  " indentexpr isn't much help otherwise
 
 setlocal indentexpr=GetCylcIndent(v:lnum)
-setlocal indentkeys=!^F,o,O,]
+setlocal indentkeys=!^F,o,O,],\",'
 
 " Only define the function once.
 if exists("*GetCylcIndent")
@@ -29,6 +29,18 @@ function s:prev_header(lnum)
   " Jump to the header preceding a given line
   call cursor(a:lnum, 1)
   return search('^\s*\[\+', "bW")
+endfunction
+
+function s:is_in_multistring(lnum)
+  " Check whether a given line makes up a multi-line string
+  if has('syntax_items')
+    for id in synstack(a:lnum, 1)
+      if synIDattr(id, "name") =~ "String"
+        return 1
+      endif
+    endfor
+  endif
+  return 0
 endfunction
 
 function GetCylcIndent(lnum)
@@ -51,11 +63,9 @@ function GetCylcIndent(lnum)
 
   " Add an extra indent inside multiline strings, not including closing
   " quotes if on their own line
-  if has('syntax_items')
-    if synIDattr(synID(a:lnum, 1, 1), "name") =~ "String"
-      if line != '"""'
-        let level = level + 1
-      endif
+  if s:is_in_multistring(a:lnum)
+    if line != '"""' && line != "'''"
+      let level = level + 1
     endif
   endif
 
