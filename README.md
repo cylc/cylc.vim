@@ -19,8 +19,30 @@ cd ~/.vim/pack/vendor/start
 git clone https://github.com/cylc/cylc.vim.git
 ```
 
-Otherwise, use your favourite plugin manager, such as
-[pathogen.vim](https://github.com/tpope/vim-pathogen).
+Otherwise, use your favourite plugin manager.
+
+#### Examples
+
+Vim Plug:
+
+```vim
+" .vimrc
+call plug#begin()
+Plug 'vsherratt/cylc.vim'
+call plug#end()
+```
+
+LazyVim:
+
+```lua
+-- lua/plugins/cylc.lua
+return {
+  -- add cylc.vim extension
+  {
+    "cylc/cylc.vim",
+  }
+}
+```
 
 
 ### Usage
