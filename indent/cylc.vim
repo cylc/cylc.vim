@@ -11,6 +11,8 @@ setlocal autoindent  " indentexpr isn't much help otherwise
 setlocal indentexpr=GetCylcIndent(v:lnum)
 setlocal indentkeys=!^F,o,O,],\",'
 
+setlocal tabstop=4 softtabstop=4 shiftwidth=4
+
 " Only define the function once.
 if exists("*GetCylcIndent")
   finish
