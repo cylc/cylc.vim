@@ -36,6 +36,7 @@ requests_).
 <!-- start-shortlog -->
  - Oliver Sanders
  - Violet Sherratt
+ - Hilary James Oliver
 <!-- end-shortlog -->
 
 (All contributors are identifiable with email addresses in the git version
