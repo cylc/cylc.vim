@@ -29,9 +29,9 @@ anything.
 The following people have contributed to this code under the terms of
 the Contributor Licence Agreement and Certificate of Origin detailed
 below (_except for the parenthesised names, which represent contributions
-from outside of Earth Sciences New Zealand and the Met Office that predate the explicit introduction
-of this Agreement in July 2018; they must be un-parenthesised in future pull
-requests_).
+from outside of Earth Sciences New Zealand and the Met Office that
+predate the explicit introduction of this Agreement in July 2018;
+they must be un-parenthesised in future pull requests_).
 
 <!-- start-shortlog -->
  - Oliver Sanders
