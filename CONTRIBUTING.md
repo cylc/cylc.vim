@@ -29,13 +29,15 @@ anything.
 The following people have contributed to this code under the terms of
 the Contributor Licence Agreement and Certificate of Origin detailed
 below (_except for the parenthesised names, which represent contributions
-from outside of NIWA and the Met Office that predate the explicit introduction
-of this Agreement in July 2018; they must be un-parenthesised in future pull
-requests_).
+from outside of Earth Sciences New Zealand and the Met Office that
+predate the explicit introduction of this Agreement in July 2018;
+they must be un-parenthesised in future pull requests_).
 
 <!-- start-shortlog -->
  - Oliver Sanders
  - Violet Sherratt
+ - Hilary James Oliver
+ - James Frost
 <!-- end-shortlog -->
 
 (All contributors are identifiable with email addresses in the git version
@@ -67,7 +69,7 @@ By making a contribution to this project, I certify that:
     the copyright and may be redistributed consistent with this project
     or the licence(s) involved.
 
-(e) I, or my employer, grant to NIWA and all recipients of
+(e) I, or my employer, grant to Earth Sciences New Zealand and all recipients of
     this software a perpetual, worldwide, non-exclusive, no-charge,
     royalty-free, irrevocable copyright licence to reproduce, modify,
     prepare derivative works of, publicly display, publicly perform,
@@ -78,7 +80,7 @@ By making a contribution to this project, I certify that:
     [Open Source Initiative (OSI)](http://www.opensource.org/).
 
 (f) If I become aware of anything that would make any of the above
-    inaccurate, in any way, I will let NIWA know as soon as
+    inaccurate, in any way, I will let Earth Sciences New Zealand know as soon as
     I become aware.
 
 (The Cylc Contributor Licence Agreement and Certificate of Origin is

@@ -68,4 +68,4 @@ add yourself to the contributors list with your first pull request.
 
 [![License](https://img.shields.io/github/license/cylc/cylc-flow.svg?color=lightgrey)](https://github.com/cylc/cylc-flow/blob/master/COPYING)
 
-Copyright (C) 2008-<span actions:bind='current-year'>2023</span> NIWA & British Crown (Met Office) & Contributors.
+Copyright (C) 2008-<span actions:bind='current-year'>2023</span> Earth Sciences New Zealand & British Crown (Met Office) & Contributors.
