@@ -37,6 +37,7 @@ they must be un-parenthesised in future pull requests_).
  - Oliver Sanders
  - Violet Sherratt
  - Hilary James Oliver
+ - James Frost
 <!-- end-shortlog -->
 
 (All contributors are identifiable with email addresses in the git version
